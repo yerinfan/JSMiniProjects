@@ -1,0 +1,80 @@
+/* 기본으로 넣어주면 좋음 */
+* {
+    box-sizing: border-box;
+    margin:0;
+} 
+
+body {
+    /* 텍스트라인으로 하면 안 먹음 */
+    display:flex;
+    /* 열을 정렬할 것 */
+    flex-direction: column; 
+    /* 중간으로 정렬 */
+    align-items: center;
+}
+
+/* 콘테이너 제한 */
+.container {
+    /* 구구단은 넘을일이 없어서 상관없는편 */
+    min-width: 240px;
+    max-width: 400px;
+    width:100%;
+}
+
+.header {
+    /* 폰트 사이즈 작으면 안 보임 */
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.gugudan-container {
+    /* 구구단 전체 센터로 */
+    text-align: center;
+}
+
+.inputArea {
+    padding-bottom: 10px;
+    background-color: bisque;
+    padding: 20px;
+}
+
+/* 구구단 출력하기 부분 */
+h1 {
+    padding-bottom: 20px;
+}
+
+/* 인풋에어리어 클래스 아래에잇는 단인풋 자식아이디 */
+.inputArea #danInput {
+    height: 45px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+
+.inputArea #displayBtn {
+    height: 45px;
+    width: 60px;
+    font-size: 1.2em;
+    /* 바텀으로 안 하면 출력부분 어긋남 */
+    vertical-align: bottom;
+    
+}
+
+.displayArea {
+    /* 마지막에 넣었읍니다. */
+    display: none;
+    background-color:lemonchiffon;
+}
+
+.displayArea #danNumber {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.displayArea #result {
+    font-size: 1.5em;
+    padding: 10px;
+    line-height: 1.5;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/white-space */
+    white-space:break-spaces;
+}
