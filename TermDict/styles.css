@@ -31,20 +31,14 @@ body {
     border-radius: 10px;
 }
 
-.input-section,
-.terms-section {
+.input-section, .search-section, .terms-section {
     margin: 10px 0;
 }
 
-.search-section {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Align search button to the right */
-    margin-top: 10px; /* Add some space between input and button */
-}
 
 .input-section {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -65,7 +59,16 @@ body {
     margin-right: 10px;
 }
 
-.input-section button,
+.input-section button {
+    width: 100px;
+    height: 45px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
 .search-section button {
     width: 100px;
     height: 45px;
@@ -74,7 +77,6 @@ body {
     border-radius: 10px;
     border: 1px solid #ccc;
     background-color: #fff;
-    margin-left: 10px;
 }
 
 input[type="text"]:focus {
@@ -86,12 +88,11 @@ input[type="text"]:focus {
 }
 
 .search-section input[type="text"] {
-    width: 80%;
     border: 1px solid #eee;
     font-size: 1.3em;
     height: 45px;
     padding: 10px;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .search-section button {
@@ -141,6 +142,20 @@ li {
     flex-direction: column;
 }
 
+li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #aaa;
+}
+
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -152,3 +167,4 @@ li {
     padding: 5px 10px;
     cursor: pointer;
 }
+
